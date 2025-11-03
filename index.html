@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RCRA 2026 Workshop Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif !important;
+            background-color: #f4f4f4;
+        }
+        p {
+            font-size: 1.0625rem;
+        }
+        a {
+            color: inherit !important;
+        }
+        #briefIntro a {
+            color: darkblue !important;
+        }
+        #submissionSection a, #proceedingsSection a {
+            color: rgb(64, 121, 186) !important;
+        }
+        section {
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header-text {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .section-title {
+            font-weight: 600;
+            color: #333;
+        }
+        #header {
+            position: relative;
+        }
+        #header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/cover.png');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.4);
+            background-color: rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+    </style>
+    <link rel="stylesheet" href="./scss/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">RCRA 2026</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#importantDates">Important Dates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#submissionSection">Submission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proceedingsSection">Proceedings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <header id="header" class="text-end text-white" style="padding: 2rem 1rem; position: relative;">
+        <div class="container">
+            <h1 class="font-weight-bold pt-4 pb-2 header-text">33rd International Workshop on
+Experimental Evaluation of Algorithms for Solving Problems
+with Combinatorial Explosion (RCRA 2026)
+            </h1>
+            <!--<h2>July 6, 2022</h2>-->
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- brief introduction -->
+     <section id="briefIntro" class="pt-4 pb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-dark">This event follows the series of the RCRA (Knowledge Representation and Automated Reasoning) annual meetings, held since 1994. The success of the previous events shows that RCRA is becoming a major forum for exchanging ideas and proposing experimentation methodologies for algorithms in Artificial Intelligence.</p>
+                    <p>The workshop is co-located with <strong><a href="https://www.floc26.org/" target="_blank">FLoC 2026 (Federated Logic Conference 2026)</a></strong>.</p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="https://www.floc26.org/assets/logo-Bui0Jkeb.svg" alt="FLoC 2026 Logo" style="width: 200px; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- brief introduction end --> 
+
+    <!-- important dates -->
+     <section id="importantDates" class="pt-4 pb-4">
+        <div class="container">
+            <h2 class="section-title text-center text-dark mb-5">Important Dates</h2>
+            <div>
+                <p style="font-size: larger; line-height: 1.1;">Abstract submission deadline: <strong>TBA</strong></p>
+                <p style="font-size: larger; line-height: 1.1;">Paper submission deadline: <strong>TBA</strong></p>
+                <p style="font-size: larger; line-height: 1.1;">Notification of Acceptance: <strong>TBA</strong></p>
+                <p style="font-size: larger; line-height: 1.1;">Final version of accepted original papers: <strong>TBA</strong></p>
+                <p style="font-size: larger; line-height: 1.1;">RCRA workshop: <strong>TBA</strong></p>
+            </div>
+        </div>
+    </section>
+    <!-- important dates end -->
+
+    <!-- introSection -->
+    <section id="introSection" class="pt-5 pb-5">
+        <h2 class="section-title text-center text-dark mb-5">Aims and Scope</h2>
+        <div class="container">
+            <p>Many problems in Artificial Intelligence show an exponential explosion of the search space. Although stemming from different research areas in AI, such problems are often addressed with algorithms that have a common goal: the effective exploration of huge state spaces. Many algorithms developed in one research area are applicable to other problems, or can be hybridized with techniques in other areas. Artificial Intelligence tools often exploit or hybridize techniques developed by other research communities, such as Operations Research. In recent years, research in Artificial Intelligence has more and more focused on experimental evaluation of algorithms, the development of suitable methodologies for experimentation and analysis, the study of languages and the implementation of systems for the definition and solution of problems.</p>
+
+            <p>The scope of the workshop is fostering the cross-fertilization of ideas stemming from different areas, proposing benchmarks for new challenging problems, comparing models and algorithms from an experimental viewpoint, and, in general, comparing different approaches regarding efficiency, problem modelling, and ease of development.</p>
+
+            <p>Topics of interest include, but are not limited to:</p>
+
+            <ul>
+                <li>Experimental evaluation of algorithms for</li>
+                <ul>
+                <li>knowledge representation</li>
+                <li>automated reasoning</li>
+                <li>planning</li>
+                <li>scheduling</li>
+                <li>machine learning</li>
+                <li>model checking</li>
+                <li>boolean satisfiability (SAT)</li>
+                <li>constraint programming</li>
+                <li>argumentation</li>
+                <li>temporal reasoning</li>
+                <li>combinatorial optimization</li>
+                <li>quantified boolean formulae and quantified constraints</li>
+                <li>modal logics</li>
+                <li>logic programming</li>
+                <li>answer set programming</li>
+                <li>ontological reasoning</li>
+                </ul>
+            <li>Definition and construction of benchmarks</li>
+            <li>Experimentation methodologies</li>
+            <li>Metaheuristics</li>
+            <li>Algorithm hybridization</li>
+            <li>Static analysis of combinatorial problems</li>
+            <li>Languages and systems for definition and solution of problems</li>
+            <li>Comparisons between systems and algorithms</li>
+            <li>Application experiences (visualization, graphics, security, transports,…)</li>
+            </ul>
+        </div>  
+    </section>
+    <!-- introSection end -->
+
+    <!-- adendaSection -->
+    <!-- <section id="agendaSection" class="pt-5 pb-5">
+        <h2 class="section-title text-center text-dark mb-5">Agenda</h2>
+        
+    </section> -->
+    <!-- agendaSection end -->
+
+    <!-- workshopChairs -->
+    <section id="workshopChairs" class="pt-5 pb-5">
+        <h2 class="section-title text-center text-dark mb-5">Workshop Chairs</h2>
+        <div class="container">
+            <p style="font-size: 1.15em; line-height: 1;"><strong>Alessandro Bertagnon</strong> University of Ferrara, Italy</p>
+            <p style="font-size: 1.15em; line-height: 1;"><strong>Marco Maratea</strong> University of Calabria, Italy</p>
+            <p style="font-size: 1.15em; line-height: 1;"><strong>Enrico Scala</strong> University of Brescia, Italy</p>
+            <p style="font-size: 1.15em; line-height: 1;"><strong>Luciano Serafini</strong> FBK, Italy</p>
+            <p style="font-size: 1.15em; line-height: 1;"><strong>Mauro Vallati</strong> University of Huddersfield, UK</p>
+        </div>
+    </section>
+
+    
+    <!-- submissionSection -->
+    <section id="submissionSection" class="pt-5 pb-5">
+        <h2 class="section-title text-center text-dark mb-5">Submission</h2>
+        <div class="container">
+            <p>Authors are invited to submit either original and non-original papers.</p>
+            
+            <p>Publications showing negative results are welcome, provided that the approach was original and very promising in principle, the experimentation was well-conducted, the results obtained were unforeseeable and gave important hints in the comprehension of the target problem, helping other researchers to avoid unsuccessful paths.</p>
+
+            <strong><p>Workshop submissions must be in PDF format, do not exceed 15 (for full papers) or 8 (for short papers) pages. Papers should be formatted according to the CEUR-WS’s single-column style </strong>(<a href="http://ceur-ws.org/HOWTOSUBMIT.html" target="_blank">http://ceur-ws.org/HOWTOSUBMIT.html</a>).</p>
+
+            <p>RCRA 2026 uses EasyChair for the submission of contributions. Contributions must be submitted through this page (<a href="https://easychair.org/conferences/?conf=rcra2026" target="_blank">https://easychair.org/conferences/?conf=rcra2026</a>).</p>
+            <div class="text-center mt-3">
+                <a href="https://easychair.org/conferences/?conf=rcra2026" target="_blank" class="btn btn-secondary" style="color: white !important;">Submit Your Paper</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- submissionSection end -->
+
+    <!-- proceedingsSection -->
+    <section id="proceedingsSection" class="pt-5 pb-5">
+        <h2 class="section-title text-center text-dark mb-5">Proceedings</h2>
+        <div class="container">
+            <p>Accepted original papers will be published in the CEUR Workshop Proceedings (<a href="http://ceur-ws.org/" target="_blank">http://ceur-ws.org/</a>) (upon authors confirmation), possibly in conjunction with other workshops.</p>
+            <p>Moreover, as in some previous editions, we are considering the possibility of having a special issue of an international journal, provided that a sufficient amount of high-quality papers is collected. All technical papers, original and non-original, will be eligible.</p>
+        </div>  
+    </section>
+    <!-- proceedingsSection end -->
+
+
+    <!-- historySection -->
+
+    <section id="historySection" class="pt-5 pb-5">
+        <h2 class="section-title text-center text-dark mb-5">History of the recent workshop series</h2>
+        <div class="container">
+            <p style="line-height: 1.2;"><a href="https://rcra2024.wordpress.com/"><strong>RCRA 2024</strong> as a workshop of AI*IA 2023, Bolzano, Italy</a></p>
+            <p style="line-height: 1.2;"><a href="https://rcra2023.wordpress.com/"><strong>RCRA 2023</strong> as a workshop of AI*IA 2023, Rome, Italy</a></p>
+            <p style="line-height: 1.2;"><a href="https://rcra2022.wordpress.com/"><strong>RCRA 2022</strong> as a workshop of LPNMR 2022, Genova, Italy</a></p>
+            <p style="line-height: 1.2;"><a href="https://rcra2021.wordpress.com/"><strong>RCRA 2021</strong> as a workshop of AI*IA 2021, Virtual</a></p>
+            <p style="line-height: 1.2;"><a href="https://rcra2020.wordpress.com/"><strong>RCRA 2020</strong> as a workshop of AI*IA 2020, Virtual</a></p>
+            <p style="line-height: 1.2;"><a href="http://rcra.aixia.it/rcra~2018"><strong>RCRA 2018</strong> as a workshop of FLoC 2018, Oxford, UK</a><br>Extended versions of the best papers will appear in a special issue of Fundamenta Informaticae</p>
+            <p style="line-height: 1.2;"><a href="http://rcra.aixia.it/rcra2017"><strong>RCRA 2017</strong> as a workshop of AI*IA 2017, Bari, Italy</a><br>Extended versions of the best papers will appear in a special issue of Fundamenta Informaticae</p>
+            <p style="line-height: 1.2;"><a href="http://rcra.aixia.it/rcra2016"><strong>RCRA 2016</strong> as a workshop of AI*IA 2016, Genova, Italy</a><br>Extended versions of the best papers will appear in a special issue of JETAI</p>
+            <p style="line-height: 1.2;"><a href="http://rcra.aixia.it/rcra2015"><strong>RCRA 2015</strong> as a workshop of AI*IA 2015, Ferrara, Italy</a><br>Extended versions of the best papers will appear in a special issue of Fundamenta Informaticae</p>
+            <p style="line-height: 1.2;"><a href="http://rcra.aixia.it/rcra2014"><strong>RCRA 2014</strong> as a workshop of SAT 2014, IJCAR 2014 and ICLP 2014, Vienna, Austria</a><br>Extended versions of the best papers will appear in a special issue of AI Communications</p>
+            <p style="line-height: 1.2;">Previous editions: <a href="http://rcra.aixia.it/workshops">http://rcra.aixia.it/workshops</a></p>
+        </div>
+    </section>
+    <!-- historySection end -->
+
+    <!-- footer -->
+    <div class="footer-end bg-secondary pt-2 pb-1">
+        <p class="text-center text-light">33rd RCRA Workshop | <a href="https://rcra.aixia.it/" target="_blank">https://rcra.aixia.it</a></p>
+    </div>
+    </footer>
+    <!-- footer end -->
+
+    </div>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
