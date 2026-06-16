@@ -56,6 +56,10 @@
             background-color: rgba(0,0,0,0.5);
             z-index: -1;
         }
+        #agendaSection table td:first-child {
+            width: 1%;
+            white-space: nowrap;
+        }
     </style>
     <link rel="stylesheet" href="./scss/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -73,6 +77,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#importantDates">Important Dates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#agendaSection">Agenda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#submissionSection">Submission</a>
@@ -170,11 +177,83 @@ with Combinatorial Explosion (RCRA 2026)
     </section>
     <!-- introSection end -->
 
-    <!-- adendaSection -->
-    <!-- <section id="agendaSection" class="pt-5 pb-5">
+    <!-- agendaSection -->
+    <section id="agendaSection" class="pt-5 pb-5">
         <h2 class="section-title text-center text-dark mb-5">Agenda</h2>
-        
-    </section> -->
+        <div class="container">
+            <p class="text-center text-muted mb-4"><strong>July 18th, 2026</strong></p>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr class="table-light">
+                        <td style="white-space: nowrap;"><strong>9:15</strong></td>
+                        <td><strong>Opening</strong></td>
+                    </tr>
+                    <tr style="background-color: #d0e4f7;">
+                        <td><strong>9:30</strong></td>
+                        <td><strong>Session 1 – Constraint Satisfaction, SAT e Heuristics</strong></td>
+                    </tr>
+                    <tr>
+                        <td>9:30</td>
+                        <td>
+                            <strong>Symmetry Breaking Constraints for SAT Solving</strong><br>
+                            <small class="text-muted">Martin Struk (Charles University); Mikoláš Janota (Czech Technical University in Prague)</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9:50</td>
+                        <td>
+                            <strong>Components of information flow underlying heuristic decisions in constraint satisfaction search</strong><br>
+                            <small class="text-muted">Richard Wallace (University College Cork)</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10:10</td>
+                        <td>
+                            <strong>Neural Network Based Analysis of Amenability of CSPs to Different Heuristic Actions</strong><br>
+                            <small class="text-muted">Richard Wallace (University College Cork)</small>
+                        </td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td><strong>10:30</strong></td>
+                        <td><strong>Coffee Break</strong></td>
+                    </tr>
+                    <tr style="background-color: #d0e4f7;">
+                        <td><strong>11:00</strong></td>
+                        <td><strong>Session 2 – AI Reasoning, Explainability e LLMs</strong></td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>
+                            <strong>Efficient Interpretability Reasoning for Decision Trees</strong><br>
+                            <small class="text-muted">Joao Marques-Silva (ICREA &amp; Univ. Lleida); Alexey Ignatiev (Monash University)</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:20</td>
+                        <td>
+                            <strong>Contextualizing Large Language Models Alongside Specialized Information Extraction and Question Answering Systems</strong><br>
+                            <small class="text-muted">Joshua Gryzen, Yuliya Lierler, Francisco Ramirez (University of Nebraska Omaha)</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:40</td>
+                        <td>
+                            <strong>Declarative Communication Filters for Controlled LLM Integration in Logic-Based Multi-Agent Systems</strong><br>
+                            <small class="text-muted">Lorenzo De Lauretis, Stefania Costantini (Università degli Studi dell'Aquila)</small>
+                        </td>
+                    </tr>
+                    <tr class="table-light">
+                        <td><strong>12:00</strong></td>
+                        <td><strong>Closing</strong></td>
+                    </tr>
+                    <tr class="table-light">
+                        <td><strong>12:15</strong></td>
+                        <td><strong>Lunch</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
     <!-- agendaSection end -->
 
     <!-- workshopChairs -->
